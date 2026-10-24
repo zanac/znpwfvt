@@ -88,4 +88,4 @@ Fonts in `fonts/`: Oswald (SIL Open Font License 1.1) and DejaVu Sans (Bitstream
 
 ## Credits
 
-Translation hack by zanac, made with Claude (Anthropic). The game is © Sega 1997; the characters are licensed by All Japan Pro-Wrestling. This repository holds no game data, only a difference against the original ROMs and the tools that made it.
+Translation hack by Vanni Brutto. The game is © Sega 1997; the characters are licensed by All Japan Pro-Wrestling. This repository holds no game data, only a difference against the original ROMs and the tools that made it.
