@@ -2,7 +2,7 @@
 
 An English translation of the Sega ST-V game **Zen Nippon Pro-Wres Featuring Virtua** (1997), built as a new ROM set: `znpwfve`.
 
-The game already has an English mode. The Taiwan release (`znpwfvt`) uses the same graphics ROMs as the Japanese one, and the language follows the BIOS region. But Sega left part of the game in Japanese, or blank, even in English mode. This set starts from the Taiwan program and redraws what was missing. The title logo stays in Japanese on purpose.
+The game already has an English mode. The Taiwan release (`znpwfvt`) uses the same graphics ROMs as the Japanese one, and the language follows the BIOS region. But Sega left part of the game in Japanese, or blank, even in English mode. This set starts from the Taiwan program and redraws what was missing. The title screen uses the official English logo of the Taiwan release.
 
 ## What is translated
 
