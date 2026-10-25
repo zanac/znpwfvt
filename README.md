@@ -38,10 +38,24 @@ The photo behind each new headline is restored from the Japanese newspaper, whic
 
 ## Screenshots
 
+![All Japan Pro-Wrestling Featuring Virtua English, match](screenshots/gameplay.png)
+
+*A match in `znpwfve`.*
+
+Official Taiwan release `znpwfvt` (English mode) on the left, `znpwfve` on
+the right:
+
+| | |
+|---|---|
+| DANGER panel: the body part was left blank | ![DANGER](screenshots/cmp_danger.png) |
+| Victory newspaper: generic lines replaced by the Japanese joke | ![Newspaper](screenshots/cmp_newspaper.png) |
+
+Hiroshi Hase and The Patriot in `znpwfve` (blank or in Japanese in the
+official English mode):
+
 | | |
 |---|---|
 | ![Hiroshi Hase](screenshots/select_hase.png) | ![The Patriot](screenshots/select_patriot.png) |
-| ![DANGER](screenshots/danger.png) | ![Newspaper](screenshots/newspaper.png) |
 
 ## Building the ROM set
 
@@ -55,13 +69,24 @@ Inputs, in one folder:
 python3 patch/make_znpwfve.py /path/to/roms [/path/to/output]
 ```
 
-The script finds the ROMs by CRC and checks every result. It writes `znpwfve.zip`:
+The script finds the ROMs by CRC (the names inside the zips do not matter)
+and checks every result.
 
-| File | CRC32 | SHA1 |
-|---|---|---|
-| `epr20408.13` | 1d62fcf6 | 3651261aa755da27b11462f2705311b7c639a687 |
-| `znpe20406.9` | b73ccd2c | 75b6d5c568ed5baf594b186db782e7e9af55205b |
-| `znpe20407.10` | d15eb928 | 5217ec91daca0d9b5bc56a904ea09765567598d5 |
+Input:
+
+| File | Size | CRC32 | SHA1 | From |
+|---|---|---|---|---|
+| epr20408.13 | 1048576 | 1d62fcf6 | 3651261aa755da27b11462f2705311b7c639a687 | `znpwfvt` (Taiwan program) |
+| mpr20406.9 | 4194304 | b677c175 | d0de7b5a29928036df0bdfced5a8021c0999eb26 | `znpwfv` |
+| mpr20407.10 | 4194304 | 58356050 | f8fb5a14f4ec516093c785891b05d55ae345754e | `znpwfv` |
+
+Output, the files of `znpwfve.zip` after the patch:
+
+| File | Size | CRC32 | SHA1 | Replaces |
+|---|---|---|---|---|
+| epr20408.13 | 1048576 | 1d62fcf6 | 3651261aa755da27b11462f2705311b7c639a687 | unchanged, Taiwan program |
+| znpe20406.9 | 4194304 | b73ccd2c | 75b6d5c568ed5baf594b186db782e7e9af55205b | mpr20406.9 |
+| znpe20407.10 | 4194304 | d15eb928 | 5217ec91daca0d9b5bc56a904ea09765567598d5 | mpr20407.10 |
 
 The other ROMs are shared with the parent `znpwfv`. The game needs `stvbios.zip` with the Taiwan BIOS (`epr-17953a.ic8`).
 

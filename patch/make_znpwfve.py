@@ -8,7 +8,7 @@ ROMDIR must hold znpwfv.zip and the Taiwan program epr20408.13, either in
 znpwfvt.zip or inside a merged znpwfv.zip (as znpwfvt/epr20408.13).
 The result is OUTDIR/znpwfve.zip (OUTDIR defaults to ROMDIR).
 """
-import os, sys, zipfile, zlib, lzma, struct
+import hashlib, os, sys, zipfile, zlib, lzma, struct
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TAIWAN = ('epr20408.13', 0x1d62fcf6)
@@ -78,7 +78,8 @@ def main():
             z.writestr(name, data)
     print('written ' + path)
     for name, data in out:
-        print('  %-14s %08x' % (name, zlib.crc32(data)))
+        print('  %-14s %8d  %08x  %s' % (name, len(data), zlib.crc32(data),
+                                        hashlib.sha1(data).hexdigest()))
     return 0
 
 
