@@ -4,6 +4,10 @@ An English translation of the Sega ST-V game **Zen Nippon Pro-Wres Featuring Vir
 
 The game already has an English mode. The Taiwan release (`znpwfvt`) uses the same graphics ROMs as the Japanese one, and the language follows the BIOS region. But Sega left part of the game in Japanese, or blank, even in English mode. This set starts from the Taiwan program and redraws what was missing. The title screen uses the official English logo of the Taiwan release.
 
+## Support
+Hey dude! Help me out for a couple of :beers: or a :coffee:!<br/>
+[![coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://bmc.link/zanac)
+
 ## What is translated
 
 **Left in Japanese or blank by the official English mode**
