@@ -1,4 +1,4 @@
-# All Japan Pro-Wrestling Featuring Virtua — English translation
+# All Japan Pro-Wrestling Featuring Virtua — English translation (Sega ST-V)
 
 An English translation of the Sega ST-V game **Zen Nippon Pro-Wres Featuring Virtua** (1997), built as a new ROM set: `znpwfve`.
 
